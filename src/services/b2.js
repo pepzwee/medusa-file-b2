@@ -1,6 +1,6 @@
-const fs = require('fs')
-const aws = require('aws-sdk')
-const { FileService } = require('medusa-interfaces')
+import fs from 'fs'
+import aws from 'aws-sdk'
+import { FileService } from 'medusa-interfaces'
 
 class B2Service extends FileService {
   constructor({}, options) {
