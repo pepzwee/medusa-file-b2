@@ -63,4 +63,4 @@ class B2Service extends FileService {
   }
 }
 
-module.exports = B2Service
+export default B2Service

@@ -4,6 +4,11 @@ function _instanceof(left, right) { if (right != null && typeof Symbol !== "unde
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
 function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
 
 function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -114,4 +119,5 @@ var B2Service = /*#__PURE__*/function (_FileService) {
   return B2Service;
 }(FileService);
 
-module.exports = B2Service;
+var _default = B2Service;
+exports["default"] = _default;

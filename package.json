@@ -13,8 +13,10 @@
     "medusa-interfaces": "1.x"
   },
   "dependencies": {
+    "@babel/plugin-transform-classes": "^7.16.7",
     "aws-sdk": "^2.1101.0",
-    "backblaze-b2": "^1.7.0"
+    "medusa-core-utils": "^1.1.31",
+    "medusa-test-utils": "^1.1.37"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.5",
