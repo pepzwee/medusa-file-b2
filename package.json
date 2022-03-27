@@ -4,7 +4,8 @@
   "description": "Backblaze B2 file connector for Medusa",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d .",
+    "prepare": "cross-env NODE_ENV=production npm run build"
   },
   "author": "Kristjan Kirpu",
   "license": "MIT",
@@ -14,5 +15,18 @@
   "dependencies": {
     "aws-sdk": "^2.1101.0",
     "backblaze-b2": "^1.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-instanceof": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.5",
+    "@babel/register": "^7.7.4",
+    "@babel/runtime": "^7.9.6",
+    "client-sessions": "^0.8.0",
+    "cross-env": "^5.2.1"
   }
 }
