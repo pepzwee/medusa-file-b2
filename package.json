@@ -1,0 +1,18 @@
+{
+  "name": "medusa-file-b2",
+  "version": "1.0.0",
+  "description": "Backblaze B2 file connector for Medusa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristjan Kirpu",
+  "license": "MIT",
+  "peerDependencies": {
+    "medusa-interfaces": "1.x"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1101.0",
+    "backblaze-b2": "^1.7.0"
+  }
+}
